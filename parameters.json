@@ -1,0 +1,23 @@
+{
+  "nImages":    60,
+  "nAtoms":     120,
+
+  "phiMin":     0.00,
+  "phiMax":     0.80,
+  "dPhi":       0.02,
+
+  "nebIter":    500,
+  "nebTol":     1e-5,
+  "nebStep":    0.08,
+  "k_spring":   1.5,
+
+  "relaxIter":  40,
+  "relaxTol":   1e-7,
+  "relaxAlpha": 0.02,
+
+  "K":          1.0,
+  "a_eq":       1.0,
+  "U0":         0.04,
+  "q_cdw":      0.05,
+  "theta":      0.0
+}
