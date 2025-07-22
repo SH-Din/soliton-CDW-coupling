@@ -67,16 +67,16 @@ Requires a C++17 compiler with OpenMP.
    make
    ```
 
----
 
-This produces the executable `free_energy` in the project root.
+
+This produces the executable `./out/free_energy_scanning.exe` 
 
 ---
 
 ## Usage
 
 ```bash
-./free_energy
+./out/free_energy_scanning.exe
 ```
 
 * If `parameters.json` exists, it is parsed to override defaults.
