@@ -55,8 +55,9 @@ Requires a C++17 compiler with OpenMP.
    ```bash
    git clone https://gitlab.com/libeigen/eigen.git external/eigen
    ```
-4. In your Makerfile, modify the following:
-    ```make
+4. In your Makerfile, modify the following accordingly:
+    ```makefile
+    zCXX = path_to_compiler/your_cpp_compiler
     CXXFLAGS = -std=c++17 -O3 -fopenmp
       -I include
       -I path_to_Eigen/
@@ -66,8 +67,6 @@ Requires a C++17 compiler with OpenMP.
    ```bash
    make
    ```
-
-
 
 This produces the executable `./out/free_energy_scanning.exe` 
 
