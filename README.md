@@ -95,13 +95,13 @@ This produces the executable `./out/free_energy_scanning.exe`
 The FK+CDW chain energy per configuration $X = \{x_i\}$ is:
 
 $$
-E(\varphi,X) = \sum_{i} \Bigl[ \tfrac12 K (x_{i+1}-x_i - a_0)^2 - U_0\cos(2\pi x_i / a_0) + \varphi\sin(q_{\rm cdw} x_i + \theta) \Bigr],
+E(\varphi,X) = \sum_{i} \left[\frac12 K (x_{i+1}-x_i - a_0)^2 - U_0\cos(2\pi x_i / a_0) + \varphi\sin(q_{\rm cdw} x_i + \theta) \right],
 $$
 where $\varphi$ is the CDW order parameter.
 
 ### 2. Reaction Coordinate $s$
 
-Define $s(j) = ∑_{k=1}^j ‖X_k − X_{k−1}‖$, the cumulative Euclidean distance along an image path of M configurations.
+Define $s(j) = ∑_{k=1}^j ‖X_k − X_{k−1}‖$, the cumulative Euclidean distance along an image path of M configurations of $\{X_k\}$.
 
 ### 3. NEB Method
 
