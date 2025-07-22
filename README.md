@@ -37,11 +37,37 @@ project-root/
 
 ## Build Instructions
 
-Requires a C++17 compiler with OpenMP and Eigen:
+Requires a C++17 compiler with OpenMP.
 
-```bash
-make
-```
+*Note: This project depends on two header-only libraries:*  
+- **nlohmann/json** for JSON parsing  
+- **Eigen** for linear algebra
+
+### Installation
+
+1. Clone this repo.
+2. Download the JSON header and place it in `include/nlohmann/`:
+   ```bash
+   curl -L -o include/nlohmann/json.hpp \
+     https://github.com/nlohmann/json/releases/latest/download/json.hpp
+   ```
+3. Download Eigen and place its `Eigen` folder in your include path:
+   ```bash
+   git clone https://gitlab.com/libeigen/eigen.git external/eigen
+   ```
+4. In your Makerfile, modify the following:
+    ```make
+    CXXFLAGS = -std=c++17 -O3 -fopenmp
+      -I include
+      -I path_to_Eigen/
+      -I path_to_nlohmann_json_include/
+    ```
+6. Build with:
+   ```bash
+   make
+   ```
+
+---
 
 This produces the executable `free_energy` in the project root.
 
